@@ -5,3 +5,22 @@
     box-sizing:border-box;
     font-family:Outfit;
 }
+.App {
+    display: flex; 
+}
+
+.layout {
+    display: flex; 
+    width: 100%; 
+}
+
+.Sidebar {
+   
+    background-color: #f4f4f4; 
+    min-height: 100vh;
+}
+
+.Main {
+    flex: 1; 
+    padding: 20px; 
+}

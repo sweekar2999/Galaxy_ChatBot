@@ -1,0 +1,160 @@
+.main{
+    flex:1;
+    min-height:95vh;
+    padding-bottom:15vh;
+    position:relative;
+}
+.main .nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    font-size:22px;
+    color:#585858;
+}
+.main .nav img{
+    width:40px;
+    border-radius:50%;
+}
+.main-container{
+    width:900px;
+    margin:auto;
+}
+.main .greet{
+    margin: 50px 0px;
+    font-size:56px;
+    color: #e4c7c5;
+    font-weight:500;
+    padding:20px;
+}
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff, #ff5546);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.main .cards{
+    gap:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    padding:20px;
+}
+.main .card{
+    height:200px;
+    padding:15px;
+    background:#f0f4f9;
+    border-radius:10px;
+    position:relative;
+    cursor:pointer;
+}
+.main .card img{
+    width:35px;
+    padding:5px;
+    position:absolute;
+    background-color:white;
+    border-radius:20px;
+    bottom:10px;
+    right:10px;
+}
+.main .card  p{
+    color:#585858;
+    font-size:17px;
+}
+.main .card:hover {
+    background-color: #dfe4ea;
+}
+.main-bottom{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    max-width:900px;
+    padding:0 20px;
+    margin:auto;
+}
+.search-box{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+background-color:#f0f4f9;
+
+padding:10px 20px;
+border-radius:50px;
+
+}
+.search-box img{
+    cursor:pointer;
+    width:24px;
+    margin-left: 10px;
+}
+.bottom-info {
+    color: #666; /* Text color for the bottom info */
+    font-size: 14px; /* Font size for the bottom info */
+    margin-top: 10px; /* Space above the bottom info */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it takes the full width of the parent */
+}
+
+.search-box input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    flex: 1; /* Allow input to take available space */
+    padding: 10px; /* Padding inside the input */
+    border-radius: 8px; /* Match the border radius of the search box */
+    font-size: 16px; /* Font size for the input text */
+    color: #333; /* Text color */
+    background-color:#f0f4f9;
+}
+.result {
+    background-color: #f0f4f9; /* Match the background of the cards */
+    border-radius: 10px; /* Consistent border radius */
+    padding: 20px; /* Padding similar to the card elements */
+    margin-bottom: 15px; /* Space between result sections */
+}
+
+.result-title {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 10px; /* Space between title and data */
+}
+
+.result-title img {
+    width: 35px; /* Consistent with other images */
+    border-radius: 50%; /* Rounded for consistency */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.result-title p {
+    color: #585858; /* Match text color with other elements */
+    font-size: 18px; /* Font size similar to card text */
+    font-weight: 500; /* Slightly bold for the title */
+}
+
+.result-data {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically center the content */
+    background-color: #fff; /* White background to stand out */
+    border-radius: 10px; /* Consistent border radius */
+    padding: 15px; /* Padding around the content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.result-data img {
+    width: 30px; /* Slightly smaller icon for consistency */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.result-data p {
+    color: #333; /* Darker text for contrast */
+    font-size: 16px; /* Text size for readability */
+    margin: 0; /* Remove default margins */
+    line-height: 1.5; /* Improve readability */
+}
+
+.result-data p a {
+    color: #4b90ff; /* Link color consistent with gradient */
+    text-decoration: none; /* No underline for links */
+}
+
+.result-data p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
