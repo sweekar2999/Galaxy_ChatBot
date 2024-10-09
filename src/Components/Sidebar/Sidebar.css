@@ -1,0 +1,95 @@
+.Sidebar {
+    background-color: #f4f4f4; /* Background color */
+    min-height: 95vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Padding around the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.Sidebar.collapsed {
+    width: 50px; /* Width when collapsed */
+}
+
+.Sidebar.extended {
+    width: 200px; /* Width when extended */
+}
+
+.new-chat, .bottom-item {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+    padding: 4px; /* Padding for better spacing */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.new-chat:hover, .bottom-item:hover {
+    background-color: #d1d7e0; /* Change background on hover */
+}
+
+.top {
+    flex: 1; /* Allow top section to take available space */
+    display: flex; /* Use flexbox for top section */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the start */
+}
+
+.bottom {
+    flex: 0 0 auto; /* Fixed height for bottom section */
+    /* Removed margin-top to eliminate extra space */
+}
+
+.menu {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
+
+.new-chat img {
+    width: 25px; /* Reduced icon size */
+    height: 29px; /* Reduced icon size */
+    margin-right: 8px; /* Add gap between icon and text */
+}
+
+.new-chat:hover {
+    background-color: #d1d7e0; /* Darker background on hover */
+}
+
+.recent {
+    margin-top: 20px; /* Space above recent chats */
+}
+
+.recent-title {
+    font-weight: bold; /* Bold title */
+    font-size: 18px; /* Increase title font size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.recent-entry {
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 50px; 
+    transition: background-color 0.3s; 
+}
+
+.recent-entry:hover {
+    background-color: #d1d7e0; /* Change background on hover */
+}
+
+.recent-entry img {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.bottom-item img {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.bottom-item:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
