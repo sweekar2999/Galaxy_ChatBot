@@ -17,20 +17,20 @@ const ContextProvider = (props) => {
         try {
             setResultData("");
             setShowResult(true);
-            const response = await run(prompt); // Use the prompt passed to the function
+            const response = await run(prompt); 
             setResultData(response);
             setInput(""); 
-            setRecentPrompt(prompt); // Update recent prompt
-            setPrevPrompt((prev) => [...prev, prompt]); // Add to previous prompts
-             // Show the result
+            setRecentPrompt(prompt); 
+            setPrevPrompt((prev) => [...prev, prompt]); 
+           
         } catch (error) {
             console.error("Error sending message:", error);
         } finally {
-            setLoading(false); // Set loading to false after the request
+            setLoading(false); 
         }
     };
 
-    // Now you can safely use onSent in ContextValue
+
     const ContextValue = {
         prevPrompt,
         setPrevPrompt,

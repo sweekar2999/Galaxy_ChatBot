@@ -1,68 +1,68 @@
 .Sidebar {
-    background-color: #f4f4f4; /* Background color */
-    min-height: 95vh; /* Full height */
+    background-color: #f4f4f4;
+    min-height: 95vh; 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px; /* Padding around the sidebar */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: width 0.3s ease; /* Smooth transition for width */
+    flex-direction: column; 
+    padding: 10px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    transition: width 0.3s ease; 
 }
 
 .Sidebar.collapsed {
-    width: 50px; /* Width when collapsed */
+    width: 50px; 
 }
 
 .Sidebar.extended {
-    width: 200px; /* Width when extended */
+    width: 200px; 
 }
 
 .new-chat, .bottom-item {
-    display: flex; /* Align items in a row */
-    align-items: center; /* Center vertically */
-    padding: 4px; /* Padding for better spacing */
-    border-radius: 50px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth background transition */
+    display: flex; 
+    align-items: center; 
+    padding: 4px; 
+    border-radius: 50px; 
+    transition: background-color 0.3s;
 }
 
 .new-chat:hover, .bottom-item:hover {
-    background-color: #d1d7e0; /* Change background on hover */
+    background-color: #d1d7e0; 
 }
 
 .top {
-    flex: 1; /* Allow top section to take available space */
-    display: flex; /* Use flexbox for top section */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align items at the start */
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
 }
 
 .bottom {
-    flex: 0 0 auto; /* Fixed height for bottom section */
-    /* Removed margin-top to eliminate extra space */
+    flex: 0 0 auto; 
+    
 }
 
 .menu {
-    width: 24px; /* Icon size */
-    height: 24px; /* Icon size */
+    width: 24px; 
+    height: 24px; 
 }
 
 .new-chat img {
-    width: 25px; /* Reduced icon size */
-    height: 29px; /* Reduced icon size */
-    margin-right: 8px; /* Add gap between icon and text */
+    width: 25px;
+    height: 29px; 
+    margin-right: 8px; 
 }
 
 .new-chat:hover {
-    background-color: #d1d7e0; /* Darker background on hover */
+    background-color: #d1d7e0; 
 }
 
 .recent {
-    margin-top: 20px; /* Space above recent chats */
+    margin-top: 20px; 
 }
 
 .recent-title {
-    font-weight: bold; /* Bold title */
-    font-size: 18px; /* Increase title font size */
-    margin-bottom: 10px; /* Space below title */
+    font-weight: bold; 
+    font-size: 18px; 
+    margin-bottom: 10px; 
 }
 
 .recent-entry {
@@ -75,21 +75,21 @@
 }
 
 .recent-entry:hover {
-    background-color: #d1d7e0; /* Change background on hover */
+    background-color: #d1d7e0; 
 }
 
 .recent-entry img {
-    width: 20px; /* Icon size */
-    height: 20px; /* Icon size */
-    margin-right: 8px; /* Space between icon and text */
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
 }
 
 .bottom-item img {
-    width: 20px; /* Icon size */
-    height: 20px; /* Icon size */
-    margin-right: 8px; /* Space between icon and text */
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
 }
 
 .bottom-item:hover {
-    background-color: #e0e0e0; /* Change background on hover */
+    background-color: #e0e0e0; 
 }

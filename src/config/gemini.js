@@ -21,24 +21,24 @@ const generationConfig = {
 
 async function run(prompt) {
     try {
-        // Initialize the chat session with the provided configuration
+      
         const chatSession = await model.startChat({
             generationConfig,
-            history: [], // Empty history for now
+            history: [], 
         });
 
-        // Send the message directly as a string
+      
         const result = await chatSession.sendMessage(prompt);
 
-        // Log the full result to understand the response structure
+        
        
 
         // Access the text in the expected way
         if (result && result.response && result.response.candidates && result.response.candidates.length > 0) {
-            // Extract text from the first candidate's first part
+           
             const responseText = result.response.candidates[0].content.parts[0].text; // Extract the text
-            console.log(responseText); // Log the formatted output as a string
-            return responseText; ; // Return the formatted output
+            console.log(responseText); 
+            return responseText; ;
         } else {
             throw new Error("Unexpected API response format");
         }
