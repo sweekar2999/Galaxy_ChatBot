@@ -41,11 +41,25 @@ function Main() {
                     <img src={assets.user_icon} alt="" />
                     <p>{recentPrompt}</p>
                 </div>
+                {
+                    loading?<div className="loader-container">
+                    <div className="printing-lines">
+                      <div className="line"></div>
+                      <div className="line"></div>
+                      <div className="line"></div>
+                      <div className="line"></div>
+                      <div className="line"></div>
+                    </div>
+                    <span className="loader-text">Loading...</span>
+                  </div>
+                  
+                  
+:
                 <div className='result-data'>
                     <img src={assets.gemini_icon} alt="" />
                     <p dangerouslySetInnerHTML={{__html:resultData}}></p>
                 </div>
-
+}
                 </div>}
             <div className='main-bottom'>
                 <div className='search-box'>
