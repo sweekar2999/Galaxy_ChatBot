@@ -37,7 +37,6 @@
 
 .bottom {
     flex: 0 0 auto; 
-    
 }
 
 .menu {
@@ -56,7 +55,8 @@
 }
 
 .recent {
-    margin-top: 20px; 
+    margin-top: 20px;
+    animation:fadeIn 1.5s; 
 }
 
 .recent-title {
@@ -92,4 +92,11 @@
 
 .bottom-item:hover {
     background-color: #e0e0e0; 
+}
+
+/* Corrected media query */
+@media (max-width: 600px) {
+    .Sidebar {
+        display: none;
+    }
 }
