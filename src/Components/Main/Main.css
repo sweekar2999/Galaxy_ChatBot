@@ -158,3 +158,79 @@ border-radius:50px;
 .result-data p a:hover {
     text-decoration: underline; 
 }
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: monospace; 
+    margin-top: -50px; 
+  }
+  
+  .printing-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  .line {
+    width: 150px;
+    height: 8px;
+    background-color: #4b90ff; 
+    animation: print-line 3s infinite; 
+    position: relative;
+  }
+  
+  .line:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .line:nth-child(2) {
+    animation-delay: 0.5s; 
+  }
+  .line:nth-child(3) {
+    animation-delay: 1s; 
+  }
+  .line:nth-child(4) {
+    animation-delay: 1.5s; 
+  }
+  .line:nth-child(5) {
+    animation-delay: 2s; 
+  }
+  
+  @keyframes print-line {
+    0% {
+      width: 0%;
+    }
+    30% {
+      width: 100%; 
+    }
+    70% {
+      width: 100%; 
+    }
+    100% {
+      width: 0%; 
+    }
+  }
+  
+  .loader-text {
+    font-size: 1.5rem; 
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent; 
+    margin-top: 10px;
+    animation: text-blink 1.5s infinite;
+  }
+  
+  @keyframes text-blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
